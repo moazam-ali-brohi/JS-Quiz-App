@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>JS Quiz App</title>
+</head>
+<body onload="showQuestions(0), quizAnime()" >
+  
+  <div class="container">
+    <div id="quizBox" class="quiz_box">
+        <div class="quiz-box-header">
+          <h1 class="testId">Quiz</h1>
+          <!-- <div class="timer-box">
+            <p class="time" >00:00</p>
+          </div> -->
+          <p id="player" >User</p>
+        </div>
+        <div class="quiz-box-q">
+          <h1 id="questionPrev">Q1. What is the full form of CSS?</h1>
+          <ul class="optionsPrev">
+            <li class="optionX" onclick="activeClass(this);" >Option 1</li>
+            <li class="optionX" onclick="activeClass(this);" >Option 1</li>
+            <li class="optionX" onclick="activeClass(this);" >Option 1</li>
+            <li class="optionX" onclick="activeClass(this);" >Option 1</li>
+          </ul>
+        </div>
+        <button id="nextBtn" onclick="showNextQ()">Next Question</button>
+      </div>
+    
+  </div>
+  <button onclick="removeActive()">click</button>
+  <script src="js/app.js"></script>
+</body>
+</html>

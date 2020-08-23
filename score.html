@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>JS Quiz App</title>
+</head>
+<body class="scorepage">
+    <div class="main">
+        <div class="image">
+            <h1>Your <br> Score</h1>
+        </div>
+        <div class="score">
+            <p id="userN" >User</p>
+            <p>You Scored</p>
+            <p id="score">0</p>
+            <p>Out of</p>
+            <p id="total">5</p>
+        </div>
+        <div class="name">
+            
+        <button onclick="window.location.href = 'index.html'">Try Again</button>
+         </div>
+    </div>
+    <a class="portf" href="https://myportfolio360-dbbac.web.app">Developer</a>
+    <script>
+        var uname=localStorage.getItem("userName");
+        var nameDis=document.getElementById("userN").innerHTML=uname;
+        var lScore=localStorage.getItem("userScore");
+        var uscore=document.getElementById("score").innerHTML=lScore;
+    </script>
+</body>
+</html>
